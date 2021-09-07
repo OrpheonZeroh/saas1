@@ -6,17 +6,15 @@ import {
     Entity,
     PrimaryGeneratedColumn,
     UpdateDateColumn,
-}from 'typeorm';
-  import { UserRole } from './users.cache'
-  import * as bcrypt from 'bcrypt';
-  
-@Entity({ name: 'users' })
-  export class Users extends BaseEntity {
+} from 'typeorm';
+import { UserRole } from '../users/users.cache'
+
+@Entity({ name: 'tenants' })
+  export class Tenants extends BaseEntity {
     @PrimaryGeneratedColumn("uuid")
     id: string;
   
     @Column()
     name: string;
 
-  }
-  
+}
