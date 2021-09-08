@@ -12,7 +12,7 @@ export class CreateUserDto {
 export class ReadUserDto {
   @IsNumber()
   @Expose()
-  readonly id: number;
+  readonly id: string;
 
   @IsNumber()
   @Expose()

@@ -71,7 +71,7 @@ import {
             }
           }
         })
-        .exclude({ path: '/api/tenants', method: RequestMethod.ALL })
+        .exclude({ path: '/api/v1/tenants', method: RequestMethod.ALL })
         .forRoutes('*');
     }
   }
