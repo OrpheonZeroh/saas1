@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { typeOrmConfigAsync } from './configs/data.access';
-import { UsersModule } from './modules/users/users.module';
+import { UsersModule } from './modules/private/users/users.module';
 
 @Module({
   imports: [

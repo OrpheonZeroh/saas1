@@ -15,6 +15,17 @@ export class ReadTenantDto {
 
 
 export class CreateTenantDto {
+
+  @IsString()
+  readonly id?: string;
+
   @IsString()
   readonly name?: string;
+}
+
+export class UpdateTenantDto {
+
+  @IsString()
+  readonly id: string;
+
 }

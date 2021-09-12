@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { TenancyModule } from '../tenants/tenants.module';
+import { TenancyModule } from '../../public/tenants/tenants.module';
 import { UserController } from './users.controllers';
 import { UserService } from './users.services';
 

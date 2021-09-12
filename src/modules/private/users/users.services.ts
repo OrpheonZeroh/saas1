@@ -2,7 +2,7 @@ import { Inject, Injectable, Scope } from '@nestjs/common';
 import { plainToClass } from 'class-transformer';
 import { Connection, Repository } from 'typeorm';
 
-import { TENANT_CONNECTION } from '../tenants/tenants.provider';
+import { TENANT_CONNECTION } from '../../public/tenants/tenants.provider';
 import { CreateUserDto, ReadUserDto } from './users.cache';
 import { Users } from './users.entity';
 

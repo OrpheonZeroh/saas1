@@ -11,7 +11,7 @@ import {
   import { NextFunction, Request } from 'express';
   import { Connection, createConnection, getConnection } from 'typeorm';
   import { ConfigService } from '@nestjs/config';
-  import { Users } from '../users/users.entity';
+  import { Users } from '../../private/users/users.entity';
   import { TenantProvider } from './tenants.provider';
   
   @Module({
@@ -72,6 +72,6 @@ import {
           }
         })
         .exclude({ path: '/api/v1/tenants', method: RequestMethod.ALL })
-        .forRoutes('*');
+        .forRoutes(TenantsController);
     }
   }
