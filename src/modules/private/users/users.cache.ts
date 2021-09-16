@@ -20,8 +20,8 @@ export class ReadUserDto {
 }
 
 export enum UserRole {
-    ADMIN = 'admin',
-    DOCTOR = 'doctor',    
-    STAFF = 'staff',
-    USER = 'users'
+  ADMIN = 'admin',
+  DOCTOR = 'doctor',    
+  STAFF = 'staff',
+  USER = 'users'
 }

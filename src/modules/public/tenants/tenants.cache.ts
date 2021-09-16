@@ -11,6 +11,10 @@ export class ReadTenantDto {
   @IsString()
   @Expose()
   readonly name: string;
+
+  @IsString()
+  @Expose()
+  readonly status: boolean;
 }
 
 

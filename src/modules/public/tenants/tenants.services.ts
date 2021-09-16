@@ -10,11 +10,11 @@ import { Tenants } from "./tenants.entity";
 @Injectable()
 export class TenantServices {
 
-    constructor(
+  constructor(
 
-      @InjectRepository(Tenants)
-      private readonly tenantRepository: Repository<Tenants>,
-    ) {}
+    @InjectRepository(Tenants)
+    private readonly tenantRepository: Repository<Tenants>,
+  ) {}
   
   async findAll(): Promise<ReadTenantDto[]> {
     const tenants = await this.tenantRepository.find();
@@ -46,13 +46,8 @@ export class TenantServices {
   }
 
   async delete(name: string) {
-    try {
-      const tenant = await this.findOne(name);
-      return await this.tenantRepository.remove(tenant)
-    } catch (error) {
-      console.error(error)
-    }
-    
+    const tenant = await this.findOne(name)
+    return await this.tenantRepository.remove(tenant)
   }
 
 }

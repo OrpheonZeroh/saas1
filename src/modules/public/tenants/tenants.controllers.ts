@@ -1,5 +1,4 @@
 import { Body, Controller, Delete, Get, Param, Post, Put, Res } from '@nestjs/common';
-
 import { CreateTenantDto, ReadTenantDto, UpdateTenantDto } from './tenants.cache';
 import { TenantServices } from './tenants.services';
 
@@ -38,7 +37,7 @@ export class TenantsController {
   ){
     console.log('hear', name)
     const data = this.tenantService.delete(name)
-    return {message: 'Tenant removed'+' '+data}
+    return {message: 'Tenant removed'}
   }
 
 }
