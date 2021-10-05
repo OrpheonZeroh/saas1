@@ -3,7 +3,7 @@ import { Body, Controller, Get, Post } from '@nestjs/common';
 import { UserService } from './users.services';
 import { CreateUserDto, ReadUserDto } from './users.cache';
 
-@Controller('users')
+@Controller('tenants/users')
 export class UserController {
   constructor(private readonly userService: UserService) {}
 

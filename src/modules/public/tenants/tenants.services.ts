@@ -1,7 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { plainToClass } from 'class-transformer';
-import { NotFoundError } from 'rxjs';
 import { Repository } from 'typeorm';
 
 import { CreateTenantDto, ReadTenantDto, UpdateTenantDto } from "./tenants.cache";

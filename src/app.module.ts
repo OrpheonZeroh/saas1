@@ -8,7 +8,7 @@ import { UsersModule } from './modules/private/users/users.module';
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
     TypeOrmModule.forRootAsync(typeOrmConfigAsync),
-    UsersModule
+    UsersModule,
   ],
   controllers: [],
   providers: [],

@@ -60,4 +60,29 @@ $ npm run test:cov
 
 ## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Simple Multi-Tenants Backend.
+
+routes:
+
+POST: https://url/api/v1/tenants/
+{
+	"name":"chu",
+	"password":"123456r"
+}
+
+GetAllsTenanst: GET https://url/api/v1/tenants/
+
+GetbyName: GET https://url/chu/api/v1/tenants/chu
+
+EditTenant: PUT https://url/chu/api/v1/tenants/id
+
+DeleteTenant: DELETE https://url/chu/api/v1/tenants/chu
+
+CreateUserByTenants: 
+POST: http://localhost:5000/chu/api/v1/tenants/users
+{
+  "name":"username"
+}
+
+GetUsersByTenants:
+GET: http://localhost:5000/chu/api/v1/tenants/users
